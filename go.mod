@@ -4,6 +4,5 @@ go 1.14
 
 require (
 	github.com/sirupsen/logrus v1.6.0
-	github.com/speza/runner v0.0.0-20200523111818-2a99c22c2f19
-	google.golang.org/grpc v1.29.1
+	github.com/speza/runner v0.0.0-20200523123046-c864ea507c7d
 )

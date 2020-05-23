@@ -53,8 +53,8 @@ github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4/go.mod h1:
 github.com/sirupsen/logrus v1.4.1/go.mod h1:ni0Sbl8bgC9z8RoU9G6nDWqqs/fq4eDPysMBDgk/93Q=
 github.com/sirupsen/logrus v1.6.0 h1:UBcNElsrwanuuMsnGSlYmtmgbb23qDR5dG+6X6Oo89I=
 github.com/sirupsen/logrus v1.6.0/go.mod h1:7uNnSEd1DgxDLC74fIahvMZmmYsHGZGEOFrfsX/uA88=
-github.com/speza/runner v0.0.0-20200523111818-2a99c22c2f19 h1:zMzGTa2fut3pPMoVXMh0csg8tblAEJZXmWuUOkHiXwY=
-github.com/speza/runner v0.0.0-20200523111818-2a99c22c2f19/go.mod h1:Ilwl05mBbrdqerL3NNnz5zA+zIBTla5wBs66xzqJctI=
+github.com/speza/runner v0.0.0-20200523123046-c864ea507c7d h1:bGthyFVaIrh3xLpkeBRTusPohFbvvym82/6b0i9Vuxs=
+github.com/speza/runner v0.0.0-20200523123046-c864ea507c7d/go.mod h1:Ilwl05mBbrdqerL3NNnz5zA+zIBTla5wBs66xzqJctI=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/objx v0.1.1/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2 h1:bSDNvY7ZPG5RlJ8otE/7V6gMiyenm9RtJ7IUVIAoJ1w=

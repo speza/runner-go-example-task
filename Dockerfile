@@ -11,7 +11,7 @@ FROM build_base AS build_go
 
 COPY . .
 
-RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -a -tags netgo -ldflags '-w -extldflags "-static"' ./cmd/server
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -a -tags netgo -ldflags '-w -extldflags "-static"' .
 
-CMD ["./server"]
+CMD ["./runner-go-example-task"]
 EXPOSE 5300
