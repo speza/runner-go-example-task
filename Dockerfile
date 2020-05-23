@@ -1,10 +1,17 @@
-FROM golang:1.12 AS build
-COPY . /app
-WORKDIR /app
-RUN go build -o main .
+FROM golang:alpine AS build_base
 
-FROM golang:alpine AS runtime
+RUN apk add bash ca-certificates git gcc g++ libc-dev
 WORKDIR /app
-COPY --from=build /app/main ./
-CMD ["./main"]
+
+COPY go.mod .
+COPY go.sum .
+RUN go mod download
+
+FROM build_base AS build_go
+
+COPY . .
+
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -a -tags netgo -ldflags '-w -extldflags "-static"' ./cmd/server
+
+CMD ["./server"]
 EXPOSE 5300
